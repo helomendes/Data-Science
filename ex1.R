@@ -1,20 +1,24 @@
-## what is the sum of the first 100 positive integers?
+## What is the sum of the first 100 positive integers?
 
-n <- 1000
-
+# First attempt
+n <- 100
 sum <- n*(n+1)/2
-
 print(sum)
 
+# Learning seq()
 x <- seq(1, n)
 x
 
-three = sum(seq(1, n))
-print(three)
+# Second attempt
+n <- 1000
+sum <- sum(seq(1, n))
+print(sum)
 
-four = log(sqrt(100), base=10)
-print(four)
+## Nested Functions
+test = log(sqrt(100), base=10)
+print(test)
 
+## Return n
 n <- 10
 log(exp(n))
 
